@@ -1,5 +1,5 @@
 # cpp4vid
-Cpp simple video player
+C++ simple video player
 ## Requirements
  - `opencv`
  - `SDL2`
