@@ -92,6 +92,7 @@ int SDL_main(int argc, char** argv) {
 	}
 
 	AudioMan::close();
+	SDL_DestroyTexture(tex);
 	cap.release();
 	SDL_DestroyRenderer(renderer);
 	SDL_DestroyWindow(window);
