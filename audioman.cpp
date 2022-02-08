@@ -34,14 +34,23 @@ namespace AudioMan {
 	}
 
 	void AudioMan::pause() {
+		if (!AudioMan::use_audio) {
+			return;
+		}
 		mciSendStringA("pause _audioman", NULL, NULL, NULL);
 	}
 
 	void AudioMan::resume() {
+		if (!AudioMan::use_audio) {
+			return;
+		}
 		mciSendStringA("resume _audioman", NULL, NULL, NULL);
 	}
 
 	void AudioMan::play() {
+		if (!AudioMan::use_audio) {
+			return;
+		}
 		mciSendStringA("play _audioman", NULL, NULL, NULL);
 	}
 
