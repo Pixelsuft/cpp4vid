@@ -1,0 +1,9 @@
+SDL2
+opencv
+.vs
+Release
+Debug
+x64
+*.zip
+*.rar
+*.log
